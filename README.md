@@ -373,7 +373,7 @@ printf("%d",c);
 return 0;
 }
 
-                                        //11-03-26//Tuesday
+                                        //11-03-26//Wednesday
 
 //To find biggest among three
 #include<stdio.h>
