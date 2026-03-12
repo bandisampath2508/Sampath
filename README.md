@@ -843,6 +843,19 @@ printf("%d\n",i);
 }
 }
 
+//To find sum of n-natural numbers using for loop
+#include<stdio.h>
+void main()
+{
+int i,sum=0,n;
+scanf("%d",&n);
+for(i=1;i<=10;i++)
+{
+sum=sum+i;
+}
+printf("sum=%d\n",sum);
+}
+
 //To print first n even numbers using for loop
 #include<stdio.h>
 void main()
