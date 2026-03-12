@@ -670,3 +670,253 @@ printf("not in range");
 }
 return 0;
 }
+
+                                        //12-03-26//Thursday
+//Programe to reverse an integer
+#include<stdio.h>
+void main()
+{
+int num,reversed=0;
+printf("enter an integer:");
+scanf("%d",&num);
+while(num!=0){
+int digit=num%10;
+reversed=reversed*10+digit;
+num=num/10;
+}
+printf("reversed number=%d\n",reversed);
+}
+
+//Programe to find given number is palindrome or not
+#include<stdio.h>
+void main()
+{
+int num,ori,rem,reversed=0;
+scanf("%d",&num);
+ori=num;
+while(num!=0)
+{
+rem=num%10;
+reversed=reversed*10+rem;
+num=num/10;
+}
+if(ori==reversed)
+printf("pal");
+else
+printf("not pal");
+}
+
+//Programe to check whether number is armstrong or not
+#include<stdio.h>
+void main()
+{
+int num,reversed=0;
+scanf("%d",&num);
+while(num!=0)
+{
+int digit=num%10;
+reversed=reversed+digit*digit*digit;
+num=num/10;
+}
+printf("an=%d",reversed);
+}
+
+//Programe to find sum of digits
+#include<studio.h>
+void main()
+{
+int num,digit,sum=0;
+scanf("%d",&sum);
+while(num!=0)
+{
+digit=num%10;
+sum=sum+digit;
+num=num/10;
+}
+printf("sum=%d",sum);
+}
+
+//To print a number is happy number
+#include<stdio.h>
+int main()
+{
+int n,o,digit,sum;
+scanf("%d",&n);
+o=n;
+while(o!=1&&o!=4)
+{
+sum=0;
+while(o>0)
+{
+digit=o%10;
+sum=sum+digit*digit;
+o=o/10;
+}
+o=sum;
+}
+if(o==1)
+printf("%d id happy number",n);
+else
+printf("%d is not happy number",n);
+return 0;
+}
+
+//To print number is automorphic 
+#include<stdio.h>
+int main()
+{
+int n,sq,o;
+scanf("%d",&n);
+sq=n*n;
+o=n;
+while(o>0)
+{
+if(o%10!=sq%10)
+{
+printf("not");
+return 0;
+}
+o=o/10;
+sq=sq/10;
+}
+printf("automorphic");
+return 0;
+}
+
+//To print number is harshad number or not
+#include<stdio.h>
+void main()
+{
+int n,o,digit,sum=0;
+scanf("%d",&n);
+o=n;
+while (n!=0)
+{
+digit=n%10;
+sum=sum+digit;
+n=n/10;
+}
+n=sum;
+if(o%sum==0)
+{
+printf("harshad no");
+}else{
+printf("not");
+}
+}
+
+//To print number is magic number or not
+#include<stdio.h>
+int main()
+{
+int n,o,digit,sum;
+scanf("%d",&n);
+o=n;
+while(n>9)
+{
+sum=0;
+while(n!=0)
+{
+digit=n%10;
+sum=sum+digit;
+n=n/10;
+}
+n=sum;
+}
+if(n==1)
+printf("magic no");
+else
+printf("not");
+return 0;
+}
+
+//To print even  number using for loop
+#include<stdio.h>
+void main()
+{
+for(int i=1;i<=10;i++)
+{
+if(i%2==0)
+{
+printf("%d\n",i);
+}
+}
+}
+
+//To print first n even numbers using for loop
+#include<stdio.h>
+void main()
+{
+int i,sum=0,n;
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+if (i%2==0)
+{
+sum=sum+i;
+}
+}
+printf("%d\n",i);
+}
+
+//To find factorial using for loop
+#include<stdio.h>
+void main()
+{
+int i,fact=1,n;
+scanf("%d",&n);
+for(i=1;i<=10;i++)
+{
+fact=fact*i;
+}
+printf("fact=%d\n",fact);
+}
+
+//To print multiplication table
+#include<stdio.h>
+void main()
+{
+int i,n,m;
+scanf("%d",&n);
+for(i=1;i<=10;i++)
+{
+m=n*i
+}
+printf("%dX%d=%d\n",i,n,m);
+}
+
+//To print factors of given number
+#include<stdio.h>
+void main()
+{
+int i,n;
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+if (n%i==0)
+printf("factors=%d\n",i);
+}
+}
+
+//To find given number is perfect or not
+#include<stdio.h>
+void main()
+{
+int i,n,sum=0,t;
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+{
+sum=sum+i;
+}
+}
+if(t==sum)
+{
+printf("%d is perfect",t);
+}else{
+printf("%d is not perfect",t);
+}
+}
+
+
