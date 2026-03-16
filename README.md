@@ -1466,6 +1466,151 @@ printf("output string after string copy:%s;s1);
 return 0;
 }
 
+//Program to find length of string without using string function
+#include<stdio.h>
+int main()
+{
+char str[50]="SAMPATH"
+get s[str];
+int i=0,len=0;
+while (str[i]!='\0'){
+len++;
+i++;
+}
+printf("length of string:%d",len);
+return 0;
+}
+
+//Program to count number of words in given statement
+#include<stdio.h>
+int main()
+{
+char str[100]="B SAMPATH";
+int i,count=1;
+for(i=0;str[i]!='\0';i++)
+{
+if(str[i]==" ")
+{
+count++;
+}
+}
+printf("number of words=%d",count);
+return 0;
+}
+
+//Programe to concatinate two string without using string concept
+#include<stdio.h>
+int main()
+{
+char str1[100]="SAMAPATH";
+char str2[20]="SAI";
+int i=0,j=0;
+while(str1[i]!='\0'){
+i++;
+}
+while(str2[j]!='\0'){
+str1[i]=str2[j];
+i++;
+j++;
+}
+str1[i]='\0';
+printf("concatenated string:%s",str1);
+return 0;
+}
+
+//Program to convert uppercase to lowercase without using string function
+#include<stdio.h>
+int main()
+{
+char str[20]="sampath";
+int i=0;
+while (str[i]!='\0'){
+if(str[i]>'a' && str[i]<'z'){
+str[i]=str[i]-32;
+}
+i++;
+}
+printf("uppercase string:%s",str);
+return 0;
+}
+
+//Programe to convert uppercase to lowercase without using string function
+#include<stdio.h>
+int main()
+{
+char str[20]="SAMPATH";
+int i=0;
+while(str[i]!='\0');
+if(str[i]>'A' && str[i]<'Z'){
+str[i]=str[i]+32;
+}
+i++;
+}
+printf("lowercase string:%s",str);
+return 0;
+}
+
+//Program to reverse a string without usinf string function
+#include<stdio.h>
+int main()
+{
+char str[20]="SAMPATH";
+char rev[10];
+int i,j=0,l;
+l=strlen(str);
+for(i=l-1;i>=0;i--){
+rev[j]=str[i];
+j++;
+}
+rev[j]='\0';
+printf("reversed string:%s",rev);
+return 0;
+}
+
+//To find given string is palindrome or not
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char str[10]="malayalam";
+int i,length,flag=0;
+length=strlen(str);
+for(i=0;i<length;i++){
+if(str[i]!=str[length-i-1]){
+flag=1;
+break;
+}
+}
+if (flag==1){
+printf("%s is not palindrome",str);
+else
+printf("%s is a palindrome",str)
+}
+}
+
+//To count number of vowels and consinants in sentence
+#include<stdio.h>
+void main()
+{
+char sentence[30]="sampath";
+int i,vowels=0,consonants=0;
+char ch;
+for(i=0;sentence[i]!='\0';i=++){
+ch=sentence[i];
+if(ch>='a' && ch<='z'){
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+vowels++;
+else
+consonants;
+}
+}
+printf("vowels:%d\n",vowels);
+printf("consonants:%d\n",consonants);
+}
+
+
+
+
 
 
 
