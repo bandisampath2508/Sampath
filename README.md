@@ -1177,3 +1177,301 @@ else
 printf("Not a palindrome");
 return 0;
 }
+
+                                      //14-03-26//Saturday
+
+//To find lcm of lcm of given number
+#include<stdio.h>
+int main()
+{
+int a,b,lcm;
+scanf("%d%d",&a,&b);
+int max=(a>b)?a:b;
+while(1){
+if (max%a==0 && max%b==0){
+lcm=max;
+break;
+}
+max++;
+}
+printf("lcm=%d",lcm);
+return 0;
+}
+
+//To print gcd of givrn number
+#include<stdio.h>
+int main()
+{
+int a,b,gcd;
+scanf("%d%d",&a&b);
+for(int i=1;i<=a &&i<=b;i++){
+if(a%i==0 && b%i==0)
+gcd=i;
+}
+printf("gcd=%d",gcd);
+return 0;
+}
+
+//To print the pattern given below
+#include<stdio.h>
+void main()
+{
+int i,j,n;
+scanf("%d",&n);
+for(i=n;i>=1;i--){
+for(j=1;j<=i;j++){
+printf("%d",i);
+}
+printf("\n");
+}
+}
+
+//To print the given pattern
+#include<stdio.h>
+void main()
+{
+int i,j,n;
+scanf("%d",&n);
+for(i=n;i>=1;i--){
+for(j=1;j<=i;j++){
+printf("%d",j);
+}
+printf("\n");
+}
+}
+
+//To print given number is perfect square or not
+#include<stdio.h>
+include<math.h>
+int maint()
+{
+int n;
+scanf("%d",&n);
+int r=sqrt(n);
+if(r*r==n)
+printf("it is perfect square");
+else
+printf("not perfect square");
+return 0;
+}
+
+//Display numbers using array
+#include<stdio.h>
+void main()
+{
+int i,a[5],n;
+scanf("%d",&n)
+for(i=0;i<n;++i)
+{
+scanf("%d",&a[i]);
+}
+printf("displaying numbers:\n);
+for(int i=0;i<n;++i)
+{
+printf("%d\n",a[i]);
+}
+}
+
+//Write program to display array values in reverse order
+#include<stdio.h>
+void main()
+{
+int i,a[5],n;
+scanf("%d",&n);
+for(i=0;i<n;++i)
+{
+scanf("%d",&a[i]);
+}
+printf("displaying integers:\n");
+for(int i=n-1;i>=0;i--);
+{
+printf("%d\n",a[i]);
+}
+}
+
+//Program to find sum of array elements
+#include<stdio.h>
+void main()
+{
+int i,a[5],sum=0;
+scanf("%d",&n);
+for(i=0;i<=n;i++)
+{
+scanf("%d",&a[i]);}
+printf("displaying integers:");
+for(i=0;i<n;i++)
+sum=sum+a[i]
+{
+printf("%d",sum);
+}
+}
+
+//To find average of given array elements
+#include<stdio.h>
+void main()
+{
+int i,a[5],sum=0;
+float avg;
+scanf("%d",&n);
+for(i=0;i<=n;i++)
+{
+scanf("%d",&a[i]);
+printf("displaying elements");
+for(i=0;i<=n;i++)
+sum=(sum+a[i]);
+avg=(sum)/n;
+printf("avg %d=",avg);
+}
+}
+
+//To print largest element in array
+#include<stdio.h>
+void main()
+{
+int n,i,max;
+scanf("%d",&n);
+int arr[n];
+printf("enter elements:\n");
+for(i=0;i<n;i++)
+{
+scanf("%d",&arr[i]);
+}
+max=arr[0];
+for(i=1;i<n;i++)
+{
+if(arr[i]>max){
+max=arr[i];
+}
+}
+printf("largest number=%d",max);
+return 0;
+}
+
+//To search the given element in an array
+#include<stdio.h>
+int main()
+{
+int arr[100],n,i,key,found=0;
+printf("enter number of elements: ");
+scanf("%d",&n);
+printf("enter the elements:\n");
+for(i=0;i<n;i++)
+{
+scanf("%d",&arr[i]);
+}
+printf("enter the element to search: ");
+scanf('%d",&key);
+for(i=0;i<n;i++)
+{
+if(arr[i]==key)
+{
+printf("element found at position %d",i+1);
+found=1;
+break;
+}
+}
+if(found==0)
+{
+printf("element not found");
+}
+return 0;
+}
+
+//To check whether number is composite or not
+#include<stdio.h>
+int main()
+{
+int n,i,count=0;
+printf("enter a number: ");
+scanf("%d",&n);
+for(i=1;i<=n;i+=)
+{
+if(n%i==0)
+count++;
+}
+if(count>2)
+printf("composite number");
+else
+printf("not a composite number");
+return 0;
+}
+
+                                           //16-03-26//Monday
+//Read string from user
+#include<stdio.h>
+int main()
+{
+char name[20];
+printf("enter name:");
+scanf("%s",name);
+printf("your name is %s.",name);
+return 0;
+}
+
+//To find length of string
+#include<stdio.h>
+int main()
+{
+char str[50]="SAMPATH";
+int len=strlen(str);
+printf("length of string: %d",len);
+return 0;
+}
+
+// To convert  given  string into Lowercase,Uppercase,Stringreverse
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+char str[50]="SAMPATH";
+char str1[50]="kalangi sathish";
+char str2[50]="SAMPATH";
+strlwr(str);
+strupr(str1);
+strrev(str2);
+printf("in lower case:%s\n",str);
+printf("in upper case:%s\n",str1);
+printf("in reverse:%s,str2);
+return 0;
+}
+
+//To compare two strings
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+char s1[20]="SAMPATH";
+char s2[20]="HARI";
+if(strcmp(s1,s2)==0)
+{
+printf("string 1 and 2 are equal):
+}
+else
+{
+printf("string 1 and 2 are not equal);
+}
+return 0;
+}
+
+//String concatenation and string copy
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+char s1[50]="SAMPATH";
+char s2[50]="ARISTOTLE";
+printf("output string after concatenation:%s\n",s1);
+strcpy(s1,s2);
+printf("output string after string copy:%s;s1);
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
