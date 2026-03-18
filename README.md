@@ -1677,7 +1677,7 @@ int main()
   return 0;
 }
 
-To print duplicate element in array
+//To print duplicate element in array
 #include <stdio.h>
 int main()
 {
