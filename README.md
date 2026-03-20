@@ -1800,7 +1800,179 @@ int main()
     return 0;
 }
 
+                                 //19-03-26//Thursday
 
+// to calculate sum of first n natural numbers
+#include <stdio.h>
+int sum_n(int n) {
+int sum = 0;
+for(int i = 1; i <= n; i++) {
+ sum += i;
+}
+return sum;
+}
+int main() {
+int n, result;
+ printf("Enter a number: ");
+scanf("%d", &n);
+result = sum_n(n);
+printf("Sum of first %d natural numbers = %d", n, result);
+return 0;
+}
+
+
+// To  calculate factorial using function
+#include <stdio.h>
+int factorial(int n) {
+int fact = 1;
+for(int i = 1; i <= n; i++) {
+fact *= i;
+ }
+return fact;
+}
+int main() {
+int n, result;
+printf("Enter a number: ");
+ scanf("%d", &n);
+ result = factorial(n);
+ printf("Factorial of %d = %d", n, result);
+ return 0;
+}
+
+// To  find sum of digits using function
+#include <stdio.h>
+int sum_of_digits(int n) {
+ int sum = 0;
+ while(n > 0) {
+ sum += n % 10;
+ n = n / 10;
+ }
+ return sum;
+}
+int main() {
+int num;
+printf("Enter a number: ");
+scanf("%d", &num);
+printf("Sum of digits = %d", sum_of_digits(num));
+return 0;
+}
+
+//Library function
+#include<srdio.h>
+#include <math.h>
+ingt main()
+{
+floar n,root,p;
+scanf("%f",&n);
+root=sqrt(n);
+p=pow(2,3);
+printf("%f",root);
+printf("%f",p);
+return 0;
+}
+
+//Addition of two numbers
+#invlude <stdio.h>
+int add(int a,int b);
+int main()
+{
+int n1,n2,sum;
+scanf("%d%d",&n1,&n2);
+sum=add(n1,n2);
+printf("%d",sum);
+return 0;
+}
+int add(int a,int b)
+{
+int result;
+result=a+b;
+return result;
+}
+
+//using void function
+#include <stdio.h>
+void add(int a,int b);
+int main()
+{
+int n1,n2,sum;
+scanf("%d%d",&n1,&n2);
+add(n1,n2);
+return 0;
+}
+voide add(int a,int b)
+{
+int result;
+result=a+b;
+printf("%d",result);
+}
+
+//To find area of circle 
+#include <stdio.h>
+#define pi 3.14
+float mul(r);
+int main ()
+{
+float r,area;
+scanf("%f",&r);
+area=mul(r);
+printf("%f",area);
+return 0;
+}
+float mul(int r)
+{
+float result;
+result=3.14*r*r;
+return result;
+}
+
+//TO find S.I
+#include <stdio.h>
+float S.I(int p,intr,intt);
+int main()
+{
+float p,t,r,S.I;
+scanf("%f%f%f",&p,&t,&r);
+result=S.I(p*t*r);
+printf("%f",result);
+return 0;
+}
+float S.I(int p,int t, int r)
+{
+float result;
+result =(p*t*r)/100.0;
+result result;
+}
+
+//#include <stdio.h>
+float mul(int a,intb);
+int main()
+{
+float a,b,area;
+scanf("%f%f",&a,&b);
+result=area(a,b);
+printf("%f",result);
+return 0;
+}
+float area(inta,intb)
+{
+float result;
+result=0.5*a*b;
+return result;
+}
+
+//To find odd or even
+#include <stdio.h>
+#include <stdlib.h>  // for abs()
+int main() {
+int num;
+printf("Enter a number: ");
+scanf("%d", &num);
+if (abs(num) % 2 == 0)
+printf("Even number");
+else
+printf("Odd number");
+return 0;
+}
 
 
 
