@@ -1974,6 +1974,33 @@ printf("Odd number");
 return 0;
 }
 
+                                           //20-03-26//Friday
+//Program to find given number is plaindrome or not
+#include<stdio.h>
+void num(int n);
+int main()
+{
+int a;
+scanf("%d",&a);
+num(a);
+return 0;
+}
+void num(int n)
+{
+int sum,rev=0;
+n=sum;
+while(sum!=0){
+int dig=sum%10;
+rev=rev*10+dig;
+sum=sum/10;
+}
+if(n=rev){
+printf("pal");
+}else{
+printf("not pal);
+}
+}
+
 
 
 
