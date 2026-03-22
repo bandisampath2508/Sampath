@@ -2001,6 +2001,107 @@ printf("not pal);
 }
 }
 
+//To find perimeter of a rectangle using function
+#include<stdio.h>
+int primeter(int l ,int b);
+int main()
+{
+int l,b,perimeter;
+scanf("%d%d",&l,&b);
+r=perimeter(l,b);
+printf("%d",perimeter);
+return 0;
+}
+int perimeter(int l ,int b)
+{
+int perimeter;
+y=2*(l+b);
+return y;
+}
+
+//To print multiplication table using function
+#include<stdio.h>
+void  mul(int n);
+int main()
+{
+int i;
+scanf("%d",&i);
+mul(i);
+return 0;
+}
+void mul(int n)
+{
+int m,x;
+for(m=1;m<=10;m++){
+x=n*m;
+}
+printf(""%d X %d = %d",n,m,x);
+}
+
+//Display array elements using function
+#include<stdio.h>
+void displayarray(int arr[],int size);
+int main()
+{
+int arr[5]={10,20,30,40,50};
+int size=5;
+displayarray(arr,size);
+return 0;
+}
+void displayarray(int arr[],int size){
+int i;
+printf("array elements are: \n");
+for(i=0;i<size;i++)
+{
+printf("%d',arr[i]);
+}
+printf("\n");
+}
+
+//Program to display array elements  int reverse order using function
+#include<stdio.h>
+void displayarray(int arr[],int size);
+int main()
+{
+int arr[5]={10,20,30,40,50};
+int size=5;
+displayarray(arr,size);
+return 0;
+}
+void displayarray(int arr[],int size)
+{
+int i;
+printf("reverse order:\n");
+for(i=size-1;i>=0;i--){
+printf("%d",srr[i]);
+}
+printf("\n");
+}
+
+//Find sum of array using function
+#include<stdio.h>
+void displaysum(int arr[],int size);
+int main()
+{
+int arr[5]={1,2,3,4,5};
+int size=5;
+displaysum(arr,size);
+return 0;
+}
+void displaysum(int arr[],int size)
+{
+int i=1,sum=0;
+while(i<size){
+sum=sum+i;
+i++;
+}
+printf("sum=%d\n",sum);
+printf("end");
+}
+
+
+
+
 
 
 
