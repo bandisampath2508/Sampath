@@ -3,8 +3,8 @@
 
 int main()
 {
-    char str1[100]="snehitha";
-    char str2[100]="addusumilli",
+    char str1[100]="sampath";
+    char str2[100]="sai",
     scanf("%s", str1);
     scanf("%s", str2);
     strcpy(str2, str1);
