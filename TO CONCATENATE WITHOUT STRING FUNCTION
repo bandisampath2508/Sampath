@@ -2,8 +2,8 @@
 
 int main()
 {
-    char str1[100]="SRI"; 
-    char str2[100]="VARDHAN";
+    char str1[100]="SAI"; 
+    char str2[100]="SAMPATH";
     int i = 0, j = 0;
     scanf("%s", str1);
     scanf("%s", str2);
