@@ -6,7 +6,7 @@ int main() {
     char *p = str;
 
     while(*p) {
-        printf("%c", *p);
+        printf("%c", *p); 
         p++;
     }
 
