@@ -3,7 +3,7 @@
 
 int main()
 {
-    char str[100]="VARDHAN";
+    char str[100]="SAMPATH";
     int length;
 
     printf("Enter a string: ");
