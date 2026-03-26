@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void main() {
-    int i = 1, sum = 0;
+    int i = 1, sum = 0; 
     
     while (i <= 10) {
         if (i % 2 == 1) { // Only add to sum if the number is odd
