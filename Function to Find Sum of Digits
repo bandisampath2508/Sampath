@@ -2,7 +2,7 @@
 
 int sum(int n)
 {
-    int r,s=0;
+    int r,s=0; 
 
     while(n!=0)
     { 
