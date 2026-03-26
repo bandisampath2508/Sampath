@@ -3,7 +3,7 @@
 
 int main()
 {
-    char str1[100]="sampath";
+    char str1[100]="sampath"; 
     char str2[100]="sai",
     scanf("%s", str1);
     scanf("%s", str2);
