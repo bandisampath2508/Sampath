@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    char str[] = "C Programming";
+    char str[] = "C Programming"; 
     char *p = str;
 
     while(*p) {
