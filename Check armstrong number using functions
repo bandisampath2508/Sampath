@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int armstrong(int n) {
+int armstrong(int n) { 
     int temp = n, sum = 0, digits = 0;
 
     while(temp) {
