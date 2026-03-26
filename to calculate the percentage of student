@@ -1,7 +1,7 @@
 int main()
 {
     int percentage;
-
+ 
     printf("Enter the student's percentage: ");
     scanf("%d", &percentage);
 
