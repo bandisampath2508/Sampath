@@ -5,7 +5,7 @@ void main()
     scanf("%d",&num);
     a=num;
     while (num!=0){
-        int digit = num%10;
+        int digit = num%10; 
         sum=sum+digit;
         num=num/10;
     }
