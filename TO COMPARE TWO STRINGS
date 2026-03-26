@@ -4,7 +4,7 @@
 int main()
 {
     char str1[100]="SRI"; 
-    char str2[100]="VARDHAN";
+    char str2[100]="SAMPATH";
     scanf("%s", str1);
     scanf("%s", str2);
 
