@@ -1,7 +1,7 @@
 int main ()
 {
     int a,area;
-    scanf("%d",&a);
+    scanf("%d",&a); 
     area=a*a;
     printf("the area of the square is %d",area);
     return 0;
